@@ -29,9 +29,9 @@ try {
 
 app.locals.asset = (src) => {
   if (manifest[src]) {
-    return "/dist/#{manifest[src]}"
+    return `/dist/${manifest[src]}`
   }
-  return src
+  return `/${src}`
 }
 
 var routes = [
