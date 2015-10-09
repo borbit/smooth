@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Frontend server starter kit based on Express, Gulp, Browserify, CoffeeScript, Less and React",
   "author": "Serge Borbit",
+  "scripts": {
+    "postinstall": "./bin/build"
+  },
   "dependencies": {
     "autoprefixer": "latest",
     "babel": "latest",
