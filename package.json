@@ -29,8 +29,6 @@
     "jquery": "^2.1.4",
     "lodash": "latest",
     "nodemon": "latest",
-    "react": "latest",
-    "typed.js": "git://github.com/mattboldt/typed.js.git",
     "vinyl-source-stream": "latest"
   }
 }
