@@ -1,2 +1,2 @@
-server: ./bin/server
+web: ./bin/server
 watch: ./bin/watch
