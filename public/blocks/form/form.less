@@ -2,12 +2,18 @@
   overflow: hidden;
   max-width: 350px;
   margin: 0 auto;
-  border: 1px solid #e2e2e2;
   border-radius: 10px;
   text-align: center;
 
+  &_plans {
+    border: 1px solid #e2e2e2;
+  }
   &_payment {
     background: #f4f4f4;
+    border: 1px solid #e2e2e2;
+  }
+  &_complete {
+    background: #ff6d6d;
   }
 
   &__prices {
@@ -69,7 +75,7 @@
     text-transform: uppercase;
     line-height: 20px;
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 700;
     color: #ff6d6d;
   }
 
@@ -79,18 +85,43 @@
 
   &__section {
     margin: 20px 20px;
+
+    &_address {
+      margin-top: 100px;
+      margin-bottom: 50px;
+      opacity: .6;
+    }
   }
 
   &__title {
     margin: 0;
+    line-height: 120%;
     font-weight: 300;
     font-size: 22px;
+    color: #444;
+  }
+
+  &_complete &__title {
+    color: #fff;
+  }
+
+  &__subtitle {
+    margin: 10px 0 0 0;
+    line-height: 120%;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
   }
 
   &__text {
+    line-height: 140%;
     font-weight: 300;
     font-size: 13px;
     color: #a9a9a9;
+  }
+
+  &_complete &__text {
+    color: #fff;
   }
 
   &__input {
@@ -104,6 +135,16 @@
     font-weight: 300;
     font-size: 16px;
     outline: none;
+
+    &::-webkit-input-placeholder {
+      color: #bbb;
+    }
+    &::-moz-placeholder {
+      color: #bbb;
+    }
+    &:-ms-input-placeholder {  
+      color: #bbb;
+    }
 
     &_phone,
     &_name {
@@ -136,24 +177,44 @@
     }
 
     &_phone {
-      background-position: 5px center;
-      background-image: url('img/icon_phone.svg');
+      background-position: 12px center;
+      background-image: url('img/icon_phone.png#datauri');
     }
     &_card {
-      background-position: 5px center;
-      background-image: url('img/icon_card.svg');
+      background-position: 10px center;
+      background-image: url('img/icon_card.png#datauri');
     }
     &_name {
-      background-position: 5px center;
-      background-image: url('img/icon_user.svg');
+      background-position: 12px center;
+      background-image: url('img/icon_user.png#datauri');
     }
     &_exp {
-      background-position: 5px center;
-      background-image: url('img/icon_exp.svg');
+      background-position: 10px center;
+      background-image: url('img/icon_exp.png#datauri');
     }
     &_cvc {
-      background-position: 5px center;
-      background-image: url('img/icon_cvc.svg');
+      background-position: 10px center;
+      background-image: url('img/icon_cvc.png#datauri');
     }
+  }
+
+  &__complete {
+    display: block;
+    margin: 60px auto 30px;
+    height: 90px;
+    width: 90px;
+    
+    background-image: url('img/icon_sms.svg#datauri');
+    background-size: cover;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto 10px auto;
+    height: 26px;
+    width: 108px;
+    
+    background-image: url('img/logo.svg#datauri');
+    background-size: cover;
   }
 }
