@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body, button, input {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 140%;
+  font-size: 16px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+@import '../../blocks/btn/btn.less';
+@import '../../blocks/layout/layout.less';
+@import '../../blocks/screen/screen.less';
+@import '../../blocks/form/form.less';

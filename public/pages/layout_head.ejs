@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
+  <meta name="robots" content="noindex, nofollow">
+  <% if (locals.page_descr) { %><meta name="description" content="<%= page_descr %>" /><% } %>
+  <% if (locals.page_title) { %><title><%= page_title %></title><% } %>
+  <link rel="icon" href="<%= asset('img/favicon.gif') %>"/>
+<% (locals.css || []).forEach(function(src) { -%>
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <link href="<%= asset(src) %>" rel="stylesheet"/>
+<% }) -%>
+</head>
+<body>
