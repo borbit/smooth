@@ -1,0 +1,44 @@
+.screens {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  &__screen {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    transition: transform .2s, opacity .2s;
+  }
+
+  &_plans &__screen_plans {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  &_plans &__screen_payment {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  &_plans &__screen_complete {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  &_payment &__screen_plans {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  &_payment &__screen_payment {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  &_payment &__screen_complete {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

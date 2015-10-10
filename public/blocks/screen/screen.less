@@ -4,7 +4,7 @@
   text-align: center;
 
   &__logo {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     height: 48px;
     width: 136px;
     background: url("img/logo.svg#datauri");
@@ -12,7 +12,7 @@
 
   &__title {
     line-height: 28px;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     line-height: 34px;
     font-weight: 300;
     font-size: 35px;
@@ -20,9 +20,29 @@
   }
 
   &__subtitle {
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
     font-weight: 300;
     font-size: 22px;
     color: #444;
+  }
+
+  &__form {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 1280px) {
+    &_payment {
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+
+    &_payment &__form,
+    &_complete &__form {
+      margin-top: 30px;
+    }
+
+    &_payment &__title {
+      display: none;
+    }
   }
 }
