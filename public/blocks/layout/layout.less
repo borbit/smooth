@@ -7,9 +7,9 @@
     min-height: auto;
   }
 
-  &__screen {
-    display: flex;
-    align-items: center;
+  &__section {
+    overflow: hidden;
+    position: relative;
     width: 50%;
 
     &_left {
@@ -26,6 +26,26 @@
     @media (max-width: 850px) {
       display: block;
       width: auto;
+    }
+  }
+
+  &__screen {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    &_plans {
+
+    }
+    &_payment {
+      transform: translateX(100%);
+    }
+    &_complete {
+      transform: translateX(200%);
     }
   }
 }

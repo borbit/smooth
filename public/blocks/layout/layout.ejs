@@ -1,9 +1,16 @@
 <div class="layout">
-  <div class="layout__screen layout__screen_left">
-    <% include ../screen/screen_plans.ejs %>
-    <% include ../screen/screen_payment.ejs %>
-    <% include ../screen/screen_complete.ejs %>
+  <div class="layout__section layout__section_left">
+    <div class="layout__screen layout__screen_plans">
+      <% include ../screen/screen_plans.ejs %>
+    </div>
+    <div class="layout__screen layout__screen_payment">
+      <% include ../screen/screen_payment.ejs %>
+    </div>
+    <div class="layout__screen layout__screen_complete">
+      <% include ../screen/screen_complete.ejs %>
+    </div>
+    
     <% include ../foot/foot.ejs %>
   </div>
-  <div class="layout__screen layout__screen_right"></div>
+  <div class="layout__section layout__section_right"></div>
 </div>
