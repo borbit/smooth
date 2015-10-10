@@ -26,7 +26,7 @@
     opacity: 0;
   }
 
-  &__girl:hover &__mask {
+  &_on &__girl:hover &__mask {
     opacity: .6;
   }
 
@@ -35,6 +35,14 @@
     padding: 25px;
     bottom: 0;
     left: 0;
+    transition: opacity .2s;
+  }
+
+  &_off &__info {
+    opacity: 0;
+  }
+  &_on &__info {
+    opacity: 1;
   }
 
   &__name {
