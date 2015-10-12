@@ -33,4 +33,5 @@ function onScroll() {
 function onResize() {
   heightMockup = $mockup.height()
   heightGirls = $girls.height()
+  console.log(heightMockup, heightGirls)
 }
