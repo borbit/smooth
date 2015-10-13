@@ -1,5 +1,7 @@
 .girls {
   width: 100%;
+  opacity: 0.5;
+  transition: opacity 1s;
 
   &__girl {
     float: left;
@@ -28,6 +30,10 @@
 
   &_on &__girl:hover &__mask {
     opacity: .6;
+  }
+
+  &_on {
+    opacity: 1;
   }
 
   &__info {
