@@ -5,6 +5,7 @@ let $document = $(document)
 let $mockup = $('.layout__mockup')
 let $girls = $('.layout__girls')
 
+let windowWidth;
 let heightMockup;
 let heightGirls;
 
@@ -21,6 +22,10 @@ function autoscroll() {
 }
 
 function onScroll() {
+  if (windowWidth < 800) {
+    return
+  }
+  
   if ($window.scrollTop() >= heightMockup) {
     if ($girls.hasClass('layout__girls_fixed')) {
       $girls.removeClass('layout__girls_fixed')
@@ -37,7 +42,7 @@ function onScroll() {
 }
 
 function onResize() {
+  windowWidth = $window.width()
   heightMockup = $mockup.height()
   heightGirls = $girls.height()
-  console.log(heightMockup, heightGirls)
 }
