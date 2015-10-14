@@ -18,7 +18,7 @@ $('.layout__arrow').on('click', autoscroll);
 
 function autoscroll() {
   $('html, body').animate({
-    scrollTop: $('.layout__mockup').height()}, 'slow');
+    scrollTop: $mockup.height() }, 'slow');
 }
 
 function onScroll() {
