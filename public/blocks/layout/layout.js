@@ -13,6 +13,12 @@ onScroll()
 
 $window.on('scroll', onScroll)
 $window.on('resize', onResize)
+$('.layout__arrow').on('click', autoscroll);
+
+function autoscroll() {
+  $('html, body').animate({
+    scrollTop: $('.layout__mockup').height()}, 'slow');
+}
 
 function onScroll() {
   if ($window.scrollTop() >= heightMockup) {
