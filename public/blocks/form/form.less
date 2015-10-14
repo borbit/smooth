@@ -16,11 +16,21 @@
     background: #ff6d6d;
   }
 
+  @media (max-width: @maxMobWidth) {
+    max-width: none;
+    border-width: 1px 0;
+    border-radius: 0;
+  }
+
   &__prices {
     overflow: hidden;
     position: relative;
     border-radius: 10px 10px 0 0;
     background: #fff;
+
+    @media (max-width: @maxMobWidth) {
+      border-radius: 0;
+    }
   }
 
   &__price {

@@ -4,6 +4,7 @@ let $window = $(window)
 let $document = $(document)
 let $mockup = $('.layout__mockup')
 let $girls = $('.layout__girls')
+let $arrow = $('.layout__arrow')
 
 let windowWidth;
 let heightMockup;
@@ -14,12 +15,12 @@ onScroll()
 
 $window.on('scroll', onScroll)
 $window.on('resize', onResize)
-$('.layout__arrow').on('click', autoscroll);
 
-function autoscroll() {
+$arrow.on('click', () => {
   $('html, body').animate({
-    scrollTop: $mockup.height() }, 'slow');
-}
+    scrollTop: $mockup.height()
+  }, 200)
+})
 
 function onScroll() {
   if (windowWidth < 800) {

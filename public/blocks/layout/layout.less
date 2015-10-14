@@ -6,10 +6,13 @@
 
     @media (min-width: @minHorWidth) {
       display: flex;
+      align-items: center;
       position: fixed;
       height: 100%;
       width: 50%;
-      align-items: center;
+    }
+    @media (max-width: @maxMobWidth) {
+      padding-top: 30px;
     }
   }
 
@@ -22,6 +25,10 @@
       width: 50%;
       margin-left: auto;
       align-items: center;
+    }
+    @media (max-width: @maxMobWidth) {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -52,9 +59,13 @@
   &__girls {
     background: #000;
 
+    @media (max-width: @maxMobWidth) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
     @media (min-width: @minHorWidth) {
-      width: 50%;
       margin-left: auto;
+      width: 50%;
 
       &_fixed {
         position: fixed;
@@ -67,6 +78,8 @@
   }
 
   &__foot {
+    padding: 20px 0;
+
     @media (min-width: @minHorWidth) {
       position: fixed;
       width: 50%;

@@ -3,7 +3,7 @@
   
   @media (min-width: @minHorWidth) {
     opacity: 0.5;
-    transition: opacity 1s;
+    transition: opacity .5s;
 
     &_on {
       opacity: 1;
@@ -26,6 +26,9 @@
       display: inline-block;
       vertical-align: top;
       width: 45%;
+    }
+    @media (max-width: @maxMobWidth) {
+      width: 85%;
     }
     
     transform: translateZ(0);
