@@ -53,12 +53,14 @@
   }
 
   @media (min-width: @minHorWidth) {
-    &_on &__girl:hover &__mask {
+    &_on &__girl:hover &__mask,
+    &_on &__girl_hover &__mask {
       opacity: .6;
     }
   }
   @media (max-width: @maxVerWidth) {
-    &__girl:hover &__mask {
+    &__girl:hover &__mask,
+    &__girl_hover &__mask {
       opacity: .6;
     }
   }
@@ -99,7 +101,8 @@
     transition: all .4s .1s ease-out;
   }
 
-  &__girl:hover &__summary {
+  &__girl:hover &__summary,
+  &__girl_hover &__summary {
     max-height: 200px;
     opacity: .8;
   }

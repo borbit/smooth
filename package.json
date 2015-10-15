@@ -30,6 +30,7 @@
     "gulp-rev": "latest",
     "gulp-uglify": "latest",
     "jquery": "^2.1.4",
+    "jquery.finger": "ngryman/jquery.finger",
     "lodash": "latest",
     "nodemon": "latest",
     "vinyl-source-stream": "latest"

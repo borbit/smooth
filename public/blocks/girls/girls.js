@@ -7,6 +7,7 @@ $('.girls__girl').lazyload({
 let $window = $(window)
 let $document = $(document)
 let $girls = $('.girls')
+let $girl = $('.girls__girl');
 
 $document.on('girls:on', () => {
   $girls.removeClass('girls_off')
@@ -19,4 +20,10 @@ $document.on('girls:off', () => {
 
 $girls.on('scroll', () => {
   $window.trigger('scroll')
+})
+
+$girl.on('tap', () => {
+  var hoverClass = 'girls__girl_hover';
+  girl.removeClass(hoverClass)
+  $(this).addClass(hoverClass)
 })
