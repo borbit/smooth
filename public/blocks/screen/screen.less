@@ -23,6 +23,7 @@
     color: #444;
 
     @media (max-width: @maxMobWidth) {
+      display: block;
       margin-bottom: 10px;
       font-size: 24px;
     }
@@ -41,5 +42,23 @@
 
   &__form {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: @minHorWidth) {
+  .lowres {
+    .screen_payment .screen__logo,
+    .screen_complete .screen__logo,
+    .screen_payment .screen__title,
+    .screen_complete .screen__title,
+    .screen_payment .screen__subtitle,
+    .screen_complete .screen__subtitle {
+      display: none;
+    }
+
+    .screen_payment .screen__form,
+    .screen_complete .screen__form {
+      margin-top: 0;
+    }
   }
 }
