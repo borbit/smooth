@@ -10,8 +10,6 @@ let windowWidth;
 let heightMockup;
 let heightGirls;
 
-onResize()
-onScroll()
 
 $window.on('scroll', onScroll)
 $window.on('resize', onResize)
@@ -22,22 +20,29 @@ $arrow.on('click', () => {
   }, 200)
 })
 
+let isGirlsOn = null
+
+onResize()
+onScroll()
+
 function onScroll() {
   if (windowWidth < 800) {
     return
   }
   
   if ($window.scrollTop() >= heightMockup) {
-    if ($girls.hasClass('layout__girls_fixed')) {
+    if (isGirlsOn === null || !isGirlsOn) {
       $girls.removeClass('layout__girls_fixed')
       $mockup.css({'margin-bottom': 0})
       $document.trigger('girls:on')
+      isGirlsOn = true
     }
   } else {
-    if (!$girls.hasClass('layout__girls_fixed')) {
+    if (isGirlsOn === null || isGirlsOn) {
       $mockup.css({'margin-bottom': heightGirls})
       $girls.addClass('layout__girls_fixed')
       $document.trigger('girls:off')
+      isGirlsOn = false
     }
   }
 }
@@ -46,4 +51,5 @@ function onResize() {
   windowWidth = $window.width()
   heightMockup = $mockup.height()
   heightGirls = $girls.height()
+  onScroll()
 }

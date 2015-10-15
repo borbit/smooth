@@ -11,6 +11,9 @@
       height: 100%;
       width: 50%;
     }
+    @media (max-width: @maxVerWidth) {
+      padding-top: 40px;
+    }
     @media (max-width: @maxMobWidth) {
       padding-top: 30px;
     }
@@ -25,6 +28,10 @@
       width: 50%;
       margin-left: auto;
       align-items: center;
+    }
+    @media (max-width: @maxVerWidth) {
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
     @media (max-width: @maxMobWidth) {
       margin-top: 30px;
@@ -59,10 +66,6 @@
   &__girls {
     background: #000;
 
-    @media (max-width: @maxMobWidth) {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
     @media (min-width: @minHorWidth) {
       margin-left: auto;
       width: 50%;
@@ -74,6 +77,14 @@
         top: 0;
         transform: translateZ(0);
       }
+    }
+    @media (max-width: @maxVerWidth) {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: @maxMobWidth) {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 

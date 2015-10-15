@@ -8,6 +8,10 @@
     height: 48px;
     width: 136px;
     background: url("img/logo.svg#datauri");
+
+    @media (max-width: @maxMobWidth) {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -17,6 +21,11 @@
     font-weight: 300;
     font-size: 35px;
     color: #444;
+
+    @media (max-width: @maxMobWidth) {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
   }
 
   &__subtitle {
@@ -24,6 +33,10 @@
     font-weight: 300;
     font-size: 22px;
     color: #444;
+
+    @media (max-width: @maxMobWidth) {
+      font-size: 18px;
+    }
   }
 
   &__form {
