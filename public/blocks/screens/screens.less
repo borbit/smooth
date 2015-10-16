@@ -44,6 +44,19 @@
       transform: translateX(100%);
       opacity: 0;
     }
+
+    &_complete &__screen_plans {
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+    &_complete &__screen_payment {
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+    &_complete &__screen_complete {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   @media (max-width: @maxVerWidth) {
@@ -65,6 +78,16 @@
     }
     &_payment &__screen_complete {
       display: none;
+    }
+
+    &_complete &__screen_plans {
+      display: none;
+    }
+    &_complete &__screen_payment {
+      display: none;
+    }
+    &_complete &__screen_complete {
+      display: block;
     }
   }
 }
