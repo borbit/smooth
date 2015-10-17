@@ -33,6 +33,7 @@
     "jquery.finger": "ngryman/jquery.finger",
     "lodash": "latest",
     "nodemon": "latest",
-    "vinyl-source-stream": "latest"
+    "vinyl-source-stream": "latest",
+    "jquery.inputmask": "^3.2.2"
   }
 }
