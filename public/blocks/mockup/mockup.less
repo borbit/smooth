@@ -125,17 +125,33 @@
 
   &__play {    
     display: block;
-    margin: 0 auto;
-    padding-top: 32%;
-    width: 32%;
-    
-    background-image: url("img/icon_play.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin: 0 auto;    
+    transition: opacity .2s;
     cursor: pointer;
+
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 1.58px;
+    font-size: 14px;
+    color: #FF6D6D;
+
+    &:hover {
+      opacity: .5;
+    }
 
     &_hide {
       display: none;
+    }
+
+    &-icon {
+      display: block;
+      margin: 0 auto 10px;
+      height: 83px;
+      width: 83px;
+      
+      background-image: url("img/icon_play.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
