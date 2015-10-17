@@ -6,11 +6,11 @@ let strings = [
 , 'Vacation ideas'
 ]
 
-// $('.screen__subtitle span').typed({
-//   strings: strings,
-//   typeSpeed: 80,
-//   startDelay: 400,
-//   backSpeed: 10,
-//   backDelay: 1000,
-//   loop: true
-// })
+$('.screen__subtitle span').typed({
+  strings: strings,
+  typeSpeed: 80,
+  startDelay: 400,
+  backSpeed: 10,
+  backDelay: 1000,
+  loop: true
+})
