@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "autoprefixer": "latest",
-    "babel": "latest",
+    "babel": "5.8.23",
     "babelify": "latest",
     "body-parser": "latest",
     "browserify": "latest",
