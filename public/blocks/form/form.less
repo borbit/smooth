@@ -1,6 +1,6 @@
 .form {
   overflow: hidden;
-  max-width: 350px;
+  width: 350px;
   margin: 0 auto;
   border-radius: 10px;
   text-align: center;
@@ -17,7 +17,7 @@
   }
 
   @media (max-width: @maxMobWidth) {
-    max-width: none;
+    width: auto;
     border-width: 1px 0;
     border-radius: 0;
   }
@@ -243,11 +243,12 @@
   &__logo {
     display: block;
     margin: 0 auto 10px auto;
-    height: 26px;
-    width: 108px;
+    height: 48px;
+    width: 100px;
     
+    background: no-repeat center;
     background-image: url('img/logo.svg#datauri');
-    background-size: cover;
+    background-size: contain;
   }
 
   &__spinner {
