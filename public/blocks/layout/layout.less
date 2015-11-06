@@ -18,6 +18,21 @@
       padding-top: 30px;
     }
   }
+  &__form-wide {
+    @media (min-width: @minHorWidth) {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+    }
+    @media (max-width: @maxVerWidth) {
+      padding-top: 40px;
+    }
+    @media (max-width: @maxMobWidth) {
+      padding-top: 30px;
+    }
+  }
 
   &__mockup {
     @media (min-width: @minHorWidth) {
