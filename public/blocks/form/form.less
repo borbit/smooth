@@ -89,7 +89,7 @@
     font-weight: 700;
     color: #ff6d6d;
   }
-  
+
   &__line_border &__line-label {
     border-color: #e2e2e2;
   }
@@ -266,10 +266,12 @@
     animation-timing-function: linear;
   }
 
-  &__rate {
+  &_rate {
+    margin:35px auto 0;
+    overflow: initial;
+    box-sizing: border-box;
     border:1px solid #e2e2e2;
     border-radius: 10px;
-    margin:35px auto 0;
     text-align: center;  
 
     @media (max-width: @maxMobWidth) {
@@ -280,7 +282,9 @@
     } 
   }
 
-  &__share {
+  &_share {
+    overflow:initial;
+    box-sizing: border-box;
     border:1px solid #e2e2e2;
     border-radius: 10px;
     margin:15px auto 0;
@@ -308,35 +312,26 @@
     background-repeat: no-repeat;
   }
 
-  &__facebook-button {
-    width:100%;
-    height:100%;
-    display: block;
+  &__social-button_facebook {
     background-image: url('img/icon_facebook.png');
   }
 
-  &__pinterest-button {
-    width:100%;
-    height:100%;
-    display: block;
+  &__social-button_pinterest {
     background-image: url('img/icon_pinterest.png');
   }
 
-  &__twitter-button {
-    width:100%;
-    height:100%;
-    display: block;
+  &__social-button_twitter {
     background-image: url('img/icon_twitter.png');
   }
       
-  &__rate-star {
+  &__rate-stars {
     background-image: url('img/star.svg');
     width: 216px;
     height: 43px;
     margin: 10px auto;
   }
 
-  &__rated-star {
+  &__rated-stars {
    background-image: url('img/coloredStar.svg');
    width: 0px;
    height: 43px;

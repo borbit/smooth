@@ -4,28 +4,6 @@
   locals.js  = ['rate/rate.js'];
   locals.css = ['rate/rate.css'];
 -%>
-
 <% include ../layout_head.ejs %>
-<div class = "layout">
-<div class="layout__form-wide">
-    <div class="screens__screen screens__screen_plans">
-      <div class="screen screen_plans">
-        <div class="screen__logo"></div>
-        <h1 class="screen__title">On-demand dating advice</h1>
-        <div class="screen__form">
-          <div class="form form_analize">
-           <% include ../../blocks/form/form_rate.ejs %>
-           <% include ../../blocks/form/form_share.ejs %>
-          </div>
-          <section class="form__section form__text"> 
-           <a href="/" class="colored_text">Back to main page</a>
-         </section>
-       </div>
-      </div>
-    </div>
-    <div class="wide_foot">
-      <% include ../../blocks/foot/foot.ejs %>
-      <% include ../layout_foot.ejs %>
-    </div> 
-  </div>
-</div>
+<% include ../../blocks/layout/layout_rate.ejs %>
+<% include ../layout_foot.ejs %>

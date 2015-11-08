@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
-    <title>path-1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Mobile-Portrait" sketch:type="MSArtboardGroup" transform="translate(-38.000000, -254.000000)" fill="#FF6D6D">
-            <path d="M46.1827775,297 L50.7756376,281.33928 L38.5,271 L53.5,271 L59.4705063,254 L65.5,271 L81,271 L68.1653735,281.442457 L72.7582342,297 L59.4705055,287.49383 L46.1827775,297 Z" id="path-1" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
-</svg>
+<svg width="43" height="43" viewBox="0 0 43 43" xmlns="http://www.w3.org/2000/svg"><title>path-1</title><path d="M8.183 43l4.593-15.66L.5 17h15l5.97-17 6.03 17H43L30.165 27.442 34.758 43 21.47 33.494 8.184 43z" fill="#FF6D6D" fill-rule="evenodd"/></svg>
