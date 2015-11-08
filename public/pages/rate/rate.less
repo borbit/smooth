@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body, button, input {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 140%;
+  font-size: 16px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.colored_text {
+  color: #FF6D6D;
+  cursor: pointer;
+  text-decoration: none;
+   @media (max-width: @maxMobWidth) {
+
+   }
+}
+
+@minHorWidth: 800px;
+@maxVerWidth: 799px;
+@maxMobWidth: 420px;
+
+@import '../../blocks/btn/btn.less';
+@import '../../blocks/layout/layout.less';
+@import '../../blocks/mockup/mockup.less';
+@import '../../blocks/screens/screens.less';
+@import '../../blocks/screen/screen.less';
+@import '../../blocks/girls/girls.less';
+@import '../../blocks/form/form.less';
+@import '../../blocks/foot/foot.less';

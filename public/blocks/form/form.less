@@ -125,6 +125,7 @@
   }
 
   &__text {
+    text-align: center;
     line-height: 140%;
     font-weight: 300;
     font-size: 13px;
@@ -265,6 +266,76 @@
     animation-timing-function: linear;
   }
 
+  &_rate {
+    margin: 35px auto 0;
+    overflow: initial;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    text-align: center;  
+
+    @media (max-width: @maxMobWidth) {
+      border: none;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      border-radius: 0;
+    } 
+  }
+
+  &_share {
+    overflow:initial;
+    margin: 15px auto 0;
+    box-sizing: border-box;
+    border:1px solid #e2e2e2;
+    border-radius: 10px;
+    text-align: center; 
+
+    @media (max-width: @maxMobWidth) {
+      border: none;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      border-radius: 0;
+    } 
+  }
+
+  &__social-buttons {
+    margin: 10px 30px 30px;
+    text-align: center;
+    overflow: hidden; 
+  }
+
+  &__social-button {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-repeat: no-repeat;
+  }
+
+  &__social-button_facebook {
+    background-image: url('img/icon_facebook.png');
+  }
+
+  &__social-button_pinterest {
+    background-image: url('img/icon_pinterest.png');
+  }
+
+  &__social-button_twitter {
+    background-image: url('img/icon_twitter.png');
+  }
+      
+  &__rate-stars {
+    background-image: url('img/star.svg');
+    width: 216px;
+    height: 43px;
+    margin: 10px auto;
+  }
+
+  &__rated-stars {
+   background-image: url('img/coloredStar.svg');
+   width: 0px;
+   height: 43px;
+  }
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -274,3 +345,4 @@
     }
   }
 }
+
