@@ -1,11 +1,27 @@
 let $ = require('jquery')
 
-$('.form__rate-stars').on('mousemove', setRate)
+var rate = 0
+var width = $('.form__rate-stars').width()
+var starWidth = (width/100)*20
 
-function setRate(e) {
-  var offset = e.offsetX;
-  var width = $('.form__rate-stars').width();
-  var star_width = (width/100)*20;
-  var rate = Math.round(offset/star_width);
-  $('.form__rated-stars').css('width', rate * 20 + "%");
+var $starsRate = $('.form__rate-stars')
+var $starsRated = $('.form__rated-stars')
+
+$starsRate.on('mousemove', onMouseMove)
+$starsRate.on('mouseleave', onMouseLeave)
+$starsRate.on('click', onClick)
+
+function onMouseMove(e) {
+  setRate(Math.ceil(e.offsetX/starWidth))
+}
+function onMouseLeave(e) {
+  setRate(rate)
+}
+function onClick(e) {
+  rate = Math.ceil(e.offsetX/starWidth)
+  setRate(rate)
+}
+
+function setRate(rate) {
+  $starsRated.css('width', `${rate * 20}%`)
 }

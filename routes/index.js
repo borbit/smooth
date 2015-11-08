@@ -3,7 +3,7 @@ module.exports = (app) => {
     res.render('index/index')
   })
 
-  app.get('/rate', (req, res) => {
+  app.get('/rate-session', (req, res) => {
     res.render('rate/rate')
   })
 }
